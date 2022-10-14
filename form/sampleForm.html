@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <!-- Create a form and validate it: email, contact, name, age, designation, select multiple files, DOB and submit form after 2 seconds. -->
+
+    <form>
+      <label>Contact</label>
+      <input
+        type="text"
+        id="contact"
+        value=""
+        placeholder="Enter Contact Number"
+      />
+      <p id="contactError"></p>
+      <label>Name</label>
+      <input type="text" id="name" value="" placeholder="Enter Name" />
+      <p id="nameError"></p>
+      <label>Email</label>
+      <input type="text" id="email" value="" placeholder="Enter Email" />
+      <p id="emailError"></p>
+      <label>Age</label>
+      <input type="text" id="age" value="" placeholder="Enter Age" />
+      <p id="ageError"></p>
+      <label>Designation</label>
+      <input
+        type="text"
+        id="designation"
+        value=""
+        placeholder="Enter Designation"
+      />
+      <p id="designationError"></p>
+      <label>Date of Birth</label>
+      <input type="text" id="dateBirth" value="" placeholder="Enter DOB" />
+      <p id="dateError"></p>
+      <button type="button" onclick="validateForm()">Submit</button>
+      <p id="formError"></p>
+    </form>
+    <script src="form.js"></script>
+  </body>
+</html>
